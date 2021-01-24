@@ -3,3 +3,8 @@ Nhưng bạn không biết rõ phải tạo cái gì, mà nó phải
 dựa vào một số business logic nào đấy để khởi tạo ra
 được cái object của bạn
 -> Khi đó bạn có thể sử dụng cái Factory Method này
+
+Ưu:
+- Giảm duplicate code
+- Đóng gói việc khởi tạo các object vào trong method đấy
+- Đưa ra các business logic (truyền param, context,...) để tạo object
