@@ -75,6 +75,15 @@ class ConcreteProduct2(Product):
 
 
 def main():
+    """
+    Explain:
+    create ConcreteCreator1 
+    -> Creator 
+    -> __init__ 
+    -> store instance of ConcreteProduct1 into product property
+    -> call concrete_creator.product.interface() = instance of ConcreteProduct1.interface()
+    -> call concrete_creator.some_operation() = call method in Creator class
+    """
     concrete_creator = ConcreteCreator1()
     concrete_creator.product.interface()
     concrete_creator.some_operation()
