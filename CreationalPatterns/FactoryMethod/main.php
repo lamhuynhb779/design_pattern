@@ -48,33 +48,8 @@ class BasicAnimalFactory implements IAnimalFactory {
 	}
 }
 
-class RandomAnimalFactory implements IAnimalFactory {
-	public function createAnimal(): IAnimal {
-		$animalType = rand(1,3);
-		if ($animalType == 1) {
-			return new Dog();
-		} elseif ($animalType == 2) {
-			return new Cat();
-		} else {
-			return new Duck();
-		}
-	}
-}
-
 function myfunc() {	
-	$factoryType = rand(0, 1);
-	
-	if ($factoryType == 0) {
-		$factory = new BasicAnimalFactory();
-	} else {
-		$factory = new RandomAnimalFactory();
-	}
-
-	var_dump($factory->createAnimal()->getName());
-	var_dump($factory->createAnimal()->getName());
-	var_dump($factory->createAnimal()->getName());
-	var_dump($factory->createAnimal()->getName());
-	var_dump($factory->createAnimal()->getName());
+	$factory = new BasicAnimalFactory();
 	var_dump($factory->createAnimal()->getName());
 }
 
