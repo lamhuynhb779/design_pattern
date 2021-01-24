@@ -1,0 +1,13 @@
+Tương tư về nguyên tắc hoạt động như Factory Method, nhưng:
+- Factory Method: create an instance of several derived classes (tạo các instance có cùng nguồn gốc (cùng cha/kiểu))
+- Abstract Factory: create an instance of several families of classes (tạo ra các nhóm/dòng họ các nhau)
+-> Khác nhau về cái product mà nó tạo ra
+
+Ví dụ: 
+Ta muốn tạo ra các nhóm animal khác nhau: Linh trưởng animal, Bò sát animal,...
+Lúc này ta cần đến Abstract Factory, để trả ra một factory mà chúng ta cần sử dụng
+
+- Factory Method: subsystem của Abstract Factory
+- Abstract Factory: sẽ bao nhiều Factory Method bên trong
+- Factory Method sẽ kế thừa Abstract Factory
+
