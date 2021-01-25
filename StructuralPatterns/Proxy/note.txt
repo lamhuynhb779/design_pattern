@@ -1,0 +1,6 @@
+Proxy design pattern:
+- Thuộc loại Structural pattern
+- Dùng để limit sự access tới một resource nào đấy
+Ví dụ:
+- Check user authorization (protection proxy)
+- Expose ra ngoài một vài function mà thôi (remote proxy)
