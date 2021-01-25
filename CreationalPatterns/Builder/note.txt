@@ -1,0 +1,19 @@
+Builder là một pattern mà nó sẽ giúp chúng ta chia nhỏ 
+constructor thành nhiều phần nhỏ hơn
+Và nó cho chúng ta khả năng khởi tạo ra object bằng những
+thứ khác nhau.
+
+Giả sử: object Card sẽ có các properties:
++ firstname
++ lastname
++ tel
++ sex
++ birthday
+...
+-> Các properties này có kiểu dữ liệu khác nhau. Khi Constructor 
+khởi tạo các properties này quá lớn -> khó phân biệt được
+-> Khó build 1 object -> khó ng khác đọc
+Ví dụ:
+var car = new Car(4, new SeatBelt("Nike"), new Windscreen("Honda"), new Engine("Rosba"));
+-> Khó build, khó đọc
+=> Lúc này nên sử dụng Builder Design Pattern
