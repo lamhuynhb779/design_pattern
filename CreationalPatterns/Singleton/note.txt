@@ -1,0 +1,9 @@
+- Tạo ra duy nhất 1 instance của class đấy trong toàn bộ application.
+- Và instance này có quyền truy cập toàn cục (global).
+
+Các case hay dùng:
+- Logging: lưu lịch sử/hành vi người dùng. Chỉ cần tạo ra 1 instance Log và ta có thể dùng cho toàn bộ ứng dụng.
+- ConfigFile: Khi khởi chạy ứng dụng, lưu các giá trị config vào 1 instance Singleton. 1 ứng dụng ta chỉ muốn 1
+collection của config thôi (tính nhất quán).
+- Caching: chỉ cần tạo 1 instance dùng cho việc caching
+- Global resource:
