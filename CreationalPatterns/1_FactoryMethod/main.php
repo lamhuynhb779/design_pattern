@@ -25,13 +25,13 @@ class Duck implements IAnimal {
 // Factory method
 
 interface IAnimalFactory {
-	public function createAnimal(): IAnimal;
+	public function createAnimal(): ?IAnimal;
 }
 
 class BasicAnimalFactory implements IAnimalFactory {
 	private $index = 1;
 
-	public function createAnimal(): IAnimal {
+	public function createAnimal(): ?IAnimal {
 		if ($this->index == 1) {
 			$this->index++;
 			return new Dog();
