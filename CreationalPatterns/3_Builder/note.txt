@@ -17,3 +17,21 @@ Ví dụ:
 var car = new Car(4, new SeatBelt("Nike"), new Windscreen("Honda"), new Engine("Rosba"));
 -> Khó build, khó đọc
 => Lúc này nên sử dụng Builder Design Pattern
+
+- Thêm nữa, đối với một đối tượng có sô lượng thuộc tính nhiều
+thì việc truyền các tham số vào hàm constructor cũng gây phức tạp
+
+
+Giải pháp của Builder DP:
+1. Tách quá trình tạo đối tượng thành nhiều bước
+2. Đưa việc khởi tạo đó ra khỏi constructor của class đó => đưa vào class Builder (ex: House - HouseBuilder)
+3. Đối với từng loại đối tương (Nhà) thì có nhiều kiểu khác nhau (nhà lá, nhà lầu, cung điện, ....)
+ -> Tạo các class concrete builder class sẽ implement lại các step build của cùng 1 interface Builder
+ -> lúc này, tổ hợp các bước xây dựng giống nhau nhưng đối tượng tạo ra sẽ đa dạng hơn
+4. Việc tách các bước build ra, giúp ta cần cái nào thì build cái đó, không nhất thiết phải build hết
+
+
+Vậy khi ta muốn che dấu quá trình build thì phải ntn ???
+- Tạo 1 class Director,
++ class này sẽ nhận tham số là Builder interface (dùng interface để đa dạng loại Builder concrete class)
++ class này sẽ đóng gói các tổ hơp các bước xây dựng cần thiết để tạo ra các đối tượng hoàn chỉnh
