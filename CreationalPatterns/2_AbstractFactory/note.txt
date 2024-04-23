@@ -9,5 +9,5 @@ Lúc này ta cần đến Abstract Factory, để trả ra một factory mà ch�
 
 - Factory Method: subsystem của Abstract Factory
 - Abstract Factory: sẽ bao nhiều Factory Method bên trong
-- Factory Method sẽ kế thừa Abstract Factory
+- Abstract Factory sẽ kế thừa Factory Method
 
