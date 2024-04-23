@@ -11,3 +11,19 @@ Lúc này ta cần đến Abstract Factory, để trả ra một factory mà ch�
 - Abstract Factory: sẽ bao nhiều Factory Method bên trong
 - Abstract Factory sẽ kế thừa Factory Method
 
+// Bổ sung
+Ưu điểm:
+- Tránh sự dính chặt vào nhau giữa các class, các class không nên
+biết nhiều về nhau quá
+
+- Single Responsibility Principle:
++ gom việc tạo product về 1 mối và đặt
+ở 1 nơi duy nhất của chương trình => dễ bảo trì và support
+
+- Open/Closed Principle:
++ "Open": code theo hướng mở rộng, hỗ trợ được thêm nhiều loại product
+trong tương lai
++ "Closed": việc hỗ trợ thêm nhiều loại product nhưng hạn chế được sự
+thay đổi code + không làm phá vỡ chương trình
+
+
